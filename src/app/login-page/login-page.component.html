@@ -1,0 +1,39 @@
+<div class="container">
+    <form [formGroup] = "loginForm" class="border p-3 rounded-3">
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3">
+            <h1>Login Page</h1>
+        </div>
+        <br>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <span *ngIf="email && email.invalid && email.touched">Enter valid Email Address</span>
+        </div>
+        <br>
+    </div>
+    <div class="row" style="text-align: center;">
+        <div class="col mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" formControlName="password">
+            <span *ngIf="password && password.invalid && password.touched">Password is not valid</span>
+        </div>
+        <br>
+    </div>
+    <br><br><br><br>
+    <div class="row" >
+        <div class="col-3 offset-2">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary" (click)="onClickSignIn()" >SignIn</button>
+            </div>
+        </div>
+        <div class="col-3 offset-2">
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary" routerLink="/signup">SignUp</button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>

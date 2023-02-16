@@ -1,0 +1,28 @@
+
+
+
+form{
+    width: 500px;
+    height: 500px;
+    background-color:rgb(199, 200, 200);
+}
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-image: linear-gradient(45deg, #dd99f83b, #090909);
+    background-clip: text;
+    background-color: #161615;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
